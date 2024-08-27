@@ -1,0 +1,68 @@
+@import url("adminlte.min.css");
+@import url("bootstrap-rtl.min.css");
+@import url("custom-style.css");
+@import url("../../fonts/vazir/font-face.css");
+@import url("../../fonts/fontAwesome/all.min.css");
+@import url("persianDatepicker-default.css");
+@import url("~leaflet/dist/leaflet.css");
+body{
+    font-family: "Vazir-FD";
+}
+input[type=checkbox].input-switch{
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}
+
+label.label-switch {
+    cursor: pointer;
+    text-indent: -9999px;
+    width: 50px;
+    height: 20px;
+    background: grey;
+    display: block;
+    border-radius: 100px;
+    position: relative;
+}
+
+label.label-switch:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 90px;
+    transition: 0.3s;
+}
+
+input:checked + label.label-switch {
+    background: #007bff;
+}
+
+input:checked + label.label-switch:after {
+    left: calc(100% - 5px);
+    transform: translateX(-100%);
+}
+
+label.label-switch:active:after {
+    width: 10px;
+}
+.pdp-default .days,
+.pdp-default .dow,
+.pdp-default .pdp-footer,
+.pdp-default .yearSelect,
+.pdp-default .monthSelect{
+    font-family: Vazir;
+}
+.bootstrap-new-warning{
+    background-color: #fff3cd;
+    color: #856404;
+    border-color: #ffeeba;
+}
+item:hover {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+}
